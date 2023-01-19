@@ -39,20 +39,25 @@ function linksReportCommand( sampleDirectory ) {
 
     const linksReport = {};
 
-    const sampleAnalyzer = new AriadneSampleAnalyzer();
+    const sampleAnalyzers = [
+        new AriadneSampleAnalyzer(),
+    ];
     Object.keys( index ).sort().forEach( queryString => {
         const indexEntry = index[ queryString ];
-        const sampleFile = indexEntry.sampleFiles.ariadne;
-        const sampleFilePath = path.join(
-            path.dirname( sampleDirectory ), sampleFile
-        );
-        const html = fs.readFileSync( sampleFilePath, { encoding: 'utf8' } );
-        sampleAnalyzer.parseHtml( html );
-        linksReport[ queryString ] = {
-            citation: sampleAnalyzer.citation,
-            errors: sampleAnalyzer.errors,
-            links: sampleAnalyzer.links,
-        };
+
+        sampleAnalyzers.forEach( sampleAnalyzer => {
+            const sampleFile = indexEntry.sampleFiles[ sampleAnalyzer.serviceName ];
+            const sampleFilePath = path.join(
+                path.dirname( sampleDirectory ), sampleFile
+            );
+            const html = fs.readFileSync( sampleFilePath, { encoding: 'utf8' } );
+            sampleAnalyzer.parseHtml( html );
+            linksReport[ queryString ] = {
+                citation: sampleAnalyzer.citation,
+                errors: sampleAnalyzer.errors,
+                links: sampleAnalyzer.links,
+            };
+        } );
     } );
 
     console.log( linksReport );
