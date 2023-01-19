@@ -44,7 +44,11 @@ function linksReportCommand( sampleDirectory ) {
     ];
     Object.keys( index ).sort().forEach( queryString => {
         const indexEntry = index[ queryString ];
-
+        const linksReportEntry = {
+            citation: {},
+            errors: {},
+            links: {},
+        };
         sampleAnalyzers.forEach( sampleAnalyzer => {
             const sampleFile = indexEntry.sampleFiles[ sampleAnalyzer.serviceName ];
             const sampleFilePath = path.join(
@@ -52,11 +56,11 @@ function linksReportCommand( sampleDirectory ) {
             );
             const html = fs.readFileSync( sampleFilePath, { encoding: 'utf8' } );
             sampleAnalyzer.parseHtml( html );
-            linksReport[ queryString ] = {
-                citation: sampleAnalyzer.citation,
-                errors: sampleAnalyzer.errors,
-                links: sampleAnalyzer.links,
-            };
+            linksReportEntry.citation[ sampleAnalyzer.serviceName ] = sampleAnalyzer.citation;
+            linksReportEntry.errors[ sampleAnalyzer.serviceName ] = sampleAnalyzer.errors;
+            linksReportEntry.links[ sampleAnalyzer.serviceName ] = sampleAnalyzer.links;
+
+            linksReport[ queryString ] = linksReportEntry;
         } );
     } );
 
