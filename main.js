@@ -35,7 +35,26 @@ function linksReportCommand( sampleDirectory ) {
         abort( `${ sampleDirectory } does not contain an index file` );
     }
 
-    console.log( sampleDirectory );
+    const index = require( indexFile )
+
+    const linksReport = {};
+
+    Object.keys( index ).sort().forEach( queryString => {
+        const indexEntry = index[ queryString ];
+        const sampleFile = indexEntry.sampleFiles.ariadne;
+        const sampleFilePath = path.join(
+            path.dirname( sampleDirectory ), sampleFile
+        );
+        const html = fs.readFileSync( sampleFilePath, { encoding: 'utf8' } );
+        const sampleAnalyzer = new AriadneSampleAnalyzer( html );
+        linksReport[ queryString ] = {
+            citation: sampleAnalyzer.citation,
+            errors: sampleAnalyzer.errors,
+            links: sampleAnalyzer.links,
+        };
+    } );
+
+    console.log( linksReport );
 }
 
 function statsReportCommand( linksReportFile ) {
