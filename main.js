@@ -10,6 +10,8 @@ import { hideBin } from 'yargs/helpers'
 // See "Option 2: Leverage the CommonJS require function to load JSON files"
 import { createRequire } from "module";
 
+import { AriadneSampleAnalyzer } from './lib/classes/AriadneSampleAnalyzer.js';
+
 // https://stackoverflow.com/questions/64383909/dirname-is-not-defined-in-node-14-version
 const __filename = fileURLToPath( import.meta.url );
 const __dirname = path.dirname( __filename );
