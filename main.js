@@ -39,6 +39,7 @@ function linksReportCommand( sampleDirectory ) {
 
     const linksReport = {};
 
+    const sampleAnalyzer = new AriadneSampleAnalyzer();
     Object.keys( index ).sort().forEach( queryString => {
         const indexEntry = index[ queryString ];
         const sampleFile = indexEntry.sampleFiles.ariadne;
@@ -46,7 +47,7 @@ function linksReportCommand( sampleDirectory ) {
             path.dirname( sampleDirectory ), sampleFile
         );
         const html = fs.readFileSync( sampleFilePath, { encoding: 'utf8' } );
-        const sampleAnalyzer = new AriadneSampleAnalyzer( html );
+        sampleAnalyzer.parseHtml( html );
         linksReport[ queryString ] = {
             citation: sampleAnalyzer.citation,
             errors: sampleAnalyzer.errors,
