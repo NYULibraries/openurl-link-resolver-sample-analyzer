@@ -16,11 +16,31 @@ const __dirname = path.dirname( __filename );
 
 const require = createRequire( import.meta.url );
 
+const INDEX_FILE = 'index.json';
+
+function abort( errorMessage ) {
+    console.error( errorMessage );
+    process.exit( 1 );
+}
+
 function linksReportCommand( sampleDirectory ) {
+    if ( ! ( fs.existsSync( sampleDirectory ) && fs.statSync( sampleDirectory ).isDirectory() ) ){
+        abort( `${ sampleDirectory } is not a directory` );
+    }
+
+    const indexFile = path.join( sampleDirectory, INDEX_FILE );
+    if ( ! ( fs.existsSync( indexFile ) && fs.statSync( indexFile ).isFile() ) ) {
+        abort( `${ sampleDirectory } does not contain an index file` );
+    }
+
     console.log( sampleDirectory );
 }
 
 function statsReportCommand( linksReportFile ) {
+    if ( ! ( fs.existsSync( linksReportFile ) && fs.statSync( linksReportFile ).isFile() ) ){
+        abort( `${ linksReportFile } is not a file` );
+    }
+
     console.log( linksReportFile );
 }
 
