@@ -11,6 +11,7 @@ import { hideBin } from 'yargs/helpers'
 import { createRequire } from "module";
 
 import { AriadneSampleAnalyzer } from './lib/classes/AriadneSampleAnalyzer.js';
+import { GetItSampleAnalyzer } from './lib/classes/GetItSampleAnalyzer.js';
 
 // https://stackoverflow.com/questions/64383909/dirname-is-not-defined-in-node-14-version
 const __filename = fileURLToPath( import.meta.url );
@@ -41,6 +42,7 @@ function linksReportCommand( sampleDirectory ) {
 
     const sampleAnalyzers = [
         new AriadneSampleAnalyzer(),
+        new GetItSampleAnalyzer(),
     ];
     Object.keys( index ).sort().forEach( queryString => {
         const indexEntry = index[ queryString ];
