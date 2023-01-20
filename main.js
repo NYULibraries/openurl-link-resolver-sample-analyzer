@@ -66,7 +66,7 @@ function linksReportCommand( sampleDirectory ) {
         } );
     } );
 
-    console.log( linksReport );
+    console.log( JSON.stringify( linksReport, null, '   ' ) );
 }
 
 function statsReportCommand( linksReportFile ) {
