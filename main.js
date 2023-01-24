@@ -19,7 +19,14 @@ const __dirname = path.dirname( __filename );
 
 const require = createRequire( import.meta.url );
 
+const ROOT_DIR = __dirname;
+
+// Top-level directories
+const RESULTS_DIR = path.join( ROOT_DIR, 'results' );
+
 const INDEX_FILE = 'index.json';
+const LINKS_REPORT_FILE = path.join( RESULTS_DIR, 'links-report.json' );
+const STATS_REPORT_FILE = path.join( RESULTS_DIR, 'stats-report.json' );
 
 function abort( errorMessage ) {
     console.error( errorMessage );
