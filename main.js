@@ -40,10 +40,35 @@ function linksReportCommand( sampleDirectory ) {
 
     const linksReport = {};
 
+    // For now, we only allow at most two sampleAnalyzers, the reason being that in order
+    // to save space, save later computation time, and make the output more readable,
+    // we store the link lists in this structure:
+    //
+    // {
+    //      common: [
+    //          ...
+    //      ],
+    //      unique: [
+    //          service1: [
+    //              ...
+    //          ],
+    //          service2: [
+    //              ...
+    //          ],
+    //      ]
+    // }
+    //
+    // This structure only really makes sense with two services (raw link lists).
+    // With more than two, the `unique` lists become a lot more complicated.
     const sampleAnalyzers = [
         new AriadneSampleAnalyzer(),
         new GetItSampleAnalyzer(),
     ];
+    // Abort if there are more than two sample analyzers.
+    if ( sampleAnalyzers.length > 2 ) {
+        abort( 'Only a maximum of two sample analyzers are permitted.' );
+    }
+
     Object.keys( index ).sort().forEach( queryString => {
         const indexEntry = index[ queryString ];
         const linksReportEntry = {
