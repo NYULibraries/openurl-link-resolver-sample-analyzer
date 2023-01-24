@@ -1,0 +1,32 @@
+{
+    "getit.library.nyu.edu/resolve?url_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&rft.atitle=Transitions+in+family+structure+and+adolescent+well-being&rft.aufirst=E&rft.auinit=E&rft.aulast=Spruijt&rft.date=1997&rft.epage=911&rft.genre=article&rft.issn=0001-8449&rft.issue=128&rft.jtitle=ADOLESCENCE&rft_val_fmt=info:ofi/fmt:kev:mtx:journal&rft.pages=897-911&rfr_id=info:sid/webofscience.com:WOS:WOS&rft.spage=897&rft.stitle=ADOLESCENCE&rft.volume=32&rft.au=Spruijt,+E&rft.au=deGoede,+M": {
+        "key": "dd71199fd1aa4d3febd8374256dc6a81",
+        "testCaseGroup": "normal",
+        "fetchTimestamp": "1/18/2023, 6:07:09 AM",
+        "sampleFiles": {
+            "getit": "normal/getit/d/dd71199fd1aa4d3febd8374256dc6a81.html",
+            "sfx": "normal/sfx/d/dd71199fd1aa4d3febd8374256dc6a81.html",
+            "ariadne": "normal/ariadne/d/dd71199fd1aa4d3febd8374256dc6a81.html"
+        }
+    },
+    "getit.library.nyu.edu/resolve??ctx_ver=Z39.88-2004&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rfr_id=info:sid/credoreference:credoreference&rft.genre=book&rft.btitle=New York Times&rft.atitle=The Conversion of a Climate-Change Skeptic&rft.date=July 28, 2012&rft.aulast=Muller&rft.aufirst=Richard": {
+        "key": "248e3805230f749b50d767b13707d18d",
+        "testCaseGroup": "normal",
+        "fetchTimestamp": "1/11/2023, 1:50:01 PM",
+        "sampleFiles": {
+            "ariadne": "normal/ariadne/2/248e3805230f749b50d767b13707d18d.html",
+            "getit": "normal/getit/2/248e3805230f749b50d767b13707d18d.html",
+            "sfx": "normal/sfx/2/248e3805230f749b50d767b13707d18d.html"
+        }
+    },
+    "getit.library.nyu.edu/resolve?url_ver=Z39.88-2004&url_ctx_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Actx&ctx_ver=Z39.88-2004&ctx_tim=2021-10-22T12%3A29%3A27-04%3A00&ctx_id=&ctx_enc=info%3Aofi%2Fenc%3AUTF-8&rft.aulast=Ross&rft.date=2002&rft.eissn=2163-3827&rft.genre=journal&rft.issn=0028-792X&rft.jtitle=New+Yorker&rft.language=eng&rft.lccn=++2011201780&rft.object_id=110975413975944&rft.oclcnum=909782404&rft.place=New+York&rft.private_data=909782404%3Cfssessid%3E0%3C%2Ffssessid%3E&rft.pub=F-R+Pub.+Corp.&rft.stitle=NEW+YORKER&rft.title=New+Yorker&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&rft_id=info%3Aoclcnum%2F909782404&rft_id=urn%3AISSN%3A0028-792X&req.ip=209.150.44.95&rfr_id=info%3Asid%2FFirstSearch%3AWorldCat": {
+        "key": "d808355901ca5ae42d58b099b64c1fb0",
+        "testCaseGroup": "normal",
+        "fetchTimestamp": "1/11/1111, 11:11:11 AM",
+        "sampleFiles": {
+            "ariadne": "normal/ariadne/d/d808355901ca5ae42d58b099b64c1fb0.html",
+            "getit": "normal/getit/d/d808355901ca5ae42d58b099b64c1fb0.html",
+            "sfx": "normal/sfx/d/d808355901ca5ae42d58b099b64c1fb0.html"
+        }
+    }
+}

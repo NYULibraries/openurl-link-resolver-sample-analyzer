@@ -1,0 +1,72 @@
+{
+    "getit.library.nyu.edu/resolve?genre=article&isbn=&issn=00908878&title=Happi: Household & Personal Products Industry=&volume=58&issue=10&date=20211001&atitle=Est\\u00e9e Lauder's Sales Jump 13% in Fiscal 2021.&aulast=&spage=129&sid=EBSCO:Complementary Index&pid=15291401820211001Complementary Index": {
+        "key": "af4a2a480dc2eb4332ace1cfc5256be0",
+        "testCaseGroup": "errors",
+        "fetchTimestamp": "1/17/2023, 7:59:12 PM",
+        "sampleFiles": {
+            "getit": "errors/getit/a/af4a2a480dc2eb4332ace1cfc5256be0.html",
+            "sfx": "errors/sfx/a/af4a2a480dc2eb4332ace1cfc5256be0.html",
+            "ariadne": "errors/ariadne/a/af4a2a480dc2eb4332ace1cfc5256be0.html"
+        }
+    },
+    "getit.library.nyu.edu/resolve?url_ver=Z39.88-2004&rft_val_fmt=info:ofi/fmt:kev:mtx:journal&genre=article&sid=ProQ:ProQ:daai&atitle=100%+ingenuity:+NanoLeaf.&title=Azure&issn=0829982X&date=2013-09-01&volume=29&issue=226&spage=79&au=Birks,+Kimberlie&isbn=&jtitle=Azure&btitle=&rft_id=info:eric/0001136572&rft_id=info:doi/": {
+        "key": "c189da2ab84dccf596ace31fb13e6a88",
+        "testCaseGroup": "errors",
+        "fetchTimestamp": "1/18/2023, 1:42:41 AM",
+        "sampleFiles": {
+            "getit": "errors/getit/c/c189da2ab84dccf596ace31fb13e6a88.html",
+            "sfx": "errors/sfx/c/c189da2ab84dccf596ace31fb13e6a88.html",
+            "ariadne": "errors/ariadne/c/c189da2ab84dccf596ace31fb13e6a88.html"
+        }
+    },
+    "getit.library.nyu.edu/resolve?sid=google&auinit=A&aulast=Mir-Moghtadaei&atitle=Validation+of+a+25%+nasion\\u2013inion+heuristic+for+locating+the+dorsomedial+prefrontal+cortex+for+repetitive+transcranial+magnetic+stimulation&id=pmid:27289441": {
+        "key": "4a2ab693bbbd56f321ac8ad3bd0251d7",
+        "testCaseGroup": "errors",
+        "fetchTimestamp": "1/17/2023, 8:21:27 PM",
+        "sampleFiles": {
+            "getit": "errors/getit/4/4a2ab693bbbd56f321ac8ad3bd0251d7.html",
+            "sfx": "errors/sfx/4/4a2ab693bbbd56f321ac8ad3bd0251d7.html",
+            "ariadne": "errors/ariadne/4/4a2ab693bbbd56f321ac8ad3bd0251d7.html"
+        }
+    },
+    "getit.library.nyu.edu/resolve?genre=article&isbn=&issn=07338899&title=Vanity Fair&volume=56&issue=7&date=20140701&atitle=America The Beautiful.&aulast=&spage=24&sid=EBSCO:Readers' Guide Full Text Mega (H.W. Wilson)&pid=9778198420140701Readers' Guide Full Text Mega (H.W. Wilson)": {
+        "key": "3a90420dffbb7e637bb0dd29c983be62",
+        "testCaseGroup": "errors",
+        "fetchTimestamp": "1/17/2023, 8:01:53 PM",
+        "sampleFiles": {
+            "getit": "errors/getit/3/3a90420dffbb7e637bb0dd29c983be62.html",
+            "sfx": "errors/sfx/3/3a90420dffbb7e637bb0dd29c983be62.html",
+            "ariadne": "errors/ariadne/3/3a90420dffbb7e637bb0dd29c983be62.html"
+        }
+    },
+    "getit.library.nyu.edu/resolve?genre=article&isbn=&issn=NBID.ZCBE&title=GlobeNewswire (USA)&volume=&issue=&date=20200627&atitle=Global Healthcare Cloud Computing Market By Component, By Delivery Model, By Deployment Mode, By Pricing Model, By Application, By End User, By Region, Forecast & Opportunities, 2025; This report is 80% complete and can be delivered within three working days post order confirmation and will include the latest impact analysis of Covid-19 in 2020 and forecast. Global Healthcare Cloud Computing Market By Component (Software v/s Services), By Delivery Model (Software-As-A-Service (SaaS), Infrastructure-As-A-Service (IaaS), Platform-As-A-Service (PaaS)), By Deployment Mode (On-Premise v/s Cloud), By Pricing Model (Pay-As-You-Go v/s Spot Pricing Model), By Application (Clinical Information System v/s Non-Clinical Information System), By End User (Hospitals =& Clinics, Pharmacies, Ambulatory Centers, Diagnostic Centers, Others), By Region, Forecast =& Opportunities, 2025=&aulast=&spage=&sid=EBSCO:NewsBank&pid=17BE095CD5CE1B8820200627NewsBank": {
+        "key": "edf5a8f49645cb78829cadae97af9535",
+        "testCaseGroup": "errors",
+        "fetchTimestamp": "1/17/2023, 8:12:39 PM",
+        "sampleFiles": {
+            "getit": "errors/getit/e/edf5a8f49645cb78829cadae97af9535.html",
+            "sfx": "errors/sfx/e/edf5a8f49645cb78829cadae97af9535.html",
+            "ariadne": "errors/ariadne/e/edf5a8f49645cb78829cadae97af9535.html"
+        }
+    },
+    "getit.library.nyu.edu/resolve??=&genre=book&title=The Sino-Tibetan Languages&date=2003&aulast=YUE(-HASHIMOTO)&aufirst=Anne O.": {
+        "key": "a06c8b1dbada512a5f2f31f0c1284416",
+        "testCaseGroup": "errors",
+        "fetchTimestamp": "1/11/2023, 1:00:26 PM",
+        "sampleFiles": {
+            "ariadne": "errors/ariadne/a/a06c8b1dbada512a5f2f31f0c1284416.html",
+            "getit": "errors/getit/a/a06c8b1dbada512a5f2f31f0c1284416.html",
+            "sfx": "errors/sfx/a/a06c8b1dbada512a5f2f31f0c1284416.html"
+        }
+    },
+    "getit.library.nyu.edu/pagenotfound": {
+        "key": "00000000000000000000000000000000",
+        "testCaseGroup": "errors",
+        "fetchTimestamp": "1/11/1111, 1:11:11 AM",
+        "sampleFiles": {
+            "ariadne": "errors/ariadne/0/00000000000000000000000000000000.html",
+            "getit": "errors/getit/0/00000000000000000000000000000000.html",
+            "sfx": "errors/sfx/0/00000000000000000000000000000000.html"
+        }
+    }
+}
