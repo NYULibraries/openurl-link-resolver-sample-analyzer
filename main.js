@@ -168,8 +168,8 @@ function linksReportCommand( sampleDirectory ) {
         abort( 'Only a maximum of two sample analyzers are permitted.' );
     }
 
-    Object.keys( index ).sort().forEach( queryString => {
-        const indexEntry = index[ queryString ];
+    Object.keys( index ).sort().forEach( testCaseUrl => {
+        const indexEntry = index[ testCaseUrl ];
         const linksReportEntry = {
             citation: {},
             errors: {},
@@ -190,7 +190,7 @@ function linksReportCommand( sampleDirectory ) {
         } );
         linksReportEntry.links = getCommonAndUniqueLinkLists( rawLinkLists );
 
-        linksReport[ queryString ] = linksReportEntry;
+        linksReport[ testCaseUrl ] = linksReportEntry;
     } );
 
     fs.writeFileSync( LINKS_REPORT_FILE, JSON.stringify( linksReport, null, '   ' ), { encoding: 'utf8' } );
