@@ -6,6 +6,23 @@ the responses from various services to OpenURL queries, and an analyzer which ge
 reports comparing the service samples. This project is the analyzer component.
 The sampler component is [openurl\-link\-resolver\-sampler](https://github.com/NYULibraries/openurl-link-resolver-sampler).
 
+# Usage example:
+
+Generate the links report for the _targeted/_ test group using the `links` command.
+The results will be written to _results/links-report.json_.
+
+```shell
+# Clone the response samples repo, which is currently 1.4G in size, and will
+# likely grow over time.
+git clone git@github.com:NYULibraries/openurl-link-resolver-response-samples.git
+
+# Run the `links` command, providing the relative or absolute path to the directory
+# you would like to analyze 
+node main.js links ../openurl-link-resolver-response-samples/targeted/
+```
+
+The `stats` command has not been implemented yet.
+
 # Samples
 
 Samples are being stored in a separate repo: [openurl\-link\-resolver\-response\-samples](https://github.com/NYULibraries/openurl-link-resolver-response-samples).
